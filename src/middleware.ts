@@ -2,7 +2,7 @@ import { getAuth } from "@clerk/nextjs/server";
 import { withClerkMiddleware } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import "config/dotenv";
+import "dotenv/config";
 
 // Set the paths that don't require the user to be signed in
 const publicPaths = ["/", "/sign-in*", "/sign-up*", "/api/qstash"];
